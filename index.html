@@ -352,39 +352,7 @@
 
     <script>
         AOS.init();
-        // Fix carousel items - show first by default
-        document.addEventListener('DOMContentLoaded', function() {
-            const items = document.querySelectorAll('#animation-carousel [data-carousel-item]');
-            if (items.length > 0) {
-                items[0].classList.remove('hidden');
-                items[0].classList.add('active');
-            }
-            // Carousel buttons
-            const prevBtn = document.querySelector('[data-carousel-prev]');
-            const nextBtn = document.querySelector('[data-carousel-next]');
-            let currentIndex = 0;
-
-            function showItem(index) {
-                items.forEach((el, i) => {
-                    el.classList.add('hidden');
-                    el.classList.remove('active');
-                    if (i === index) {
-                        el.classList.remove('hidden');
-                        el.classList.add('active');
-                    }
-                });
-            }
-            if (prevBtn && nextBtn) {
-                prevBtn.addEventListener('click', function() {
-                    currentIndex = (currentIndex - 1 + items.length) % items.length;
-                    showItem(currentIndex);
-                });
-                nextBtn.addEventListener('click', function() {
-                    currentIndex = (currentIndex + 1) % items.length;
-                    showItem(currentIndex);
-                });
-            }
-        });
+        
     </script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 </body>
