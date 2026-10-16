@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOGA LIFE</title>
+    <link rel="shortcut icon" href="https://www.yogaeasy.com/wp-content/uploads/2025/10/logo_rgb-2-1-1024x307.png" type="image/x-icon">
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montenegrin+Gothic+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="relative bg-teal-900/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+                    <!-- Mobile menu button -->
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                            <span class="absolute -inset-0.5"></span>
+                            <span class="sr-only">Open main menu</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Logo -->
+                    <div class="flex flex-1 items-center justify-left sm:items-stretch sm:justify-start">
+                        <div class="flex shrink-0 items-center">
+                            <img src="https://www.yogaeasy.com/wp-content/uploads/2025/10/logo_rgb-2-1-1024x307.png" alt="Your Company" class="h-8 w-auto" />
+                        </div>
+
+                        <!-- Desktop Navigation -->
+                        <div class="hidden mx-auto sm:block">
+                            <div class="flex space-x-4">
+                                <a href="#clas" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Classes</a>
+                                <a href="#programs" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Program</a>
+                                <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Calender</a>
+                                <a href="#teachers" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Teachers</a>
+                                <a href="#membership" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Membership</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Auth Buttons -->
+                    <div class="hidden sm:flex items-center gap-2">
+                        <a href="#" aria-current="page" class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-white hover:bg-gray-800/70 transition">Sign in</a>
+                        <a href="#" aria-current="page" class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-white hover:bg-gray-800/70 transition">Start Free Trail</a>
+                    </div>
+
+                    <!-- Right side elements -->
+                    <el-dropdown class="relative ml-3">
+                        <button class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+                            <span class="absolute -inset-1.5"></span>
+                            <span class="sr-only">Open user menu</span>
+                            <div class="h-8 w-8 rounded-full bg-gray-700 flex items-center justify-center text-white text-sm font-medium">
+                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <el-menu anchor="bottom end" popover class="w-48 origin-top-right rounded-md bg-gray-800 py-1 outline -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-white/10 hover:text-white transition">Your profile</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-white/10 hover:text-white transition">Settings</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-white/10 hover:text-white transition">Sign out</a>
+                        </el-menu>
+                    </el-dropdown>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+                <div class="space-y-1 px-2 pt-2 pb-3">
+                    <a href="#" aria-current="page" class="block rounded-md bg-gray-950/50 px-3 py-2 text-base font-medium text-white">Dashboard</a>
+                    <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Team</a>
+                    <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Projects</a>
+                    <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Calendar</a>
+                    <div class="pt-4 border-t border-white/10 space-y-2">
+                        <a href="#" class="block rounded-md bg-gray-950/50 px-3 py-2 text-base font-medium text-white hover:bg-gray-800/70 transition">Sign in</a>
+                        <a href="#" class="block rounded-md bg-gray-950/50 px-3 py-2 text-base font-medium text-white hover:bg-gray-800/70 transition">Start Free Trail</a>
+                    </div>
+                </div>
+            </el-disclosure>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="w-full h-screen bg-cover relative overflow-hidden">
+        <img src="./caoha-yoga-4732209.jpg" class="w-full h-full object-cover" alt="">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-4 w-full max-w-4xl hero-text">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-teal-50 animate__animated animate__bounce" style="font-family: 'Nunito', sans-serif;">Come home to yourself.</h1>
+            <p class="text-base sm:text-lg md:text-xl text-teal-50 mt-4">Your online yoga studio for movement and mindful practices that evolve with you,<br class="hidden sm:block"> nurturing connection to your body, mind and heart through every stage of life.</p>
+        </div>
+    </section>
+
+    <!-- Practice Section -->
+    <section id="clas" class="py-10 md:py-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <!-- Card 1 -->
+            <div class="flex justify-center items-center" data-aos="flip-left">
+                <div class="bg-neutral-primary-soft block w-full max-w-sm p-6 border border-default rounded-base shadow-xs hover:shadow-md transition">
+                    <div class="flex justify-center pb-6">
+                        <i class="fa-brands fa-google-play fa-2xl" style="color: rgb(65, 161, 132);"></i>
+                    </div>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-heading text-center" style="color: rgb(65, 161, 132);">LIVE Online Classes</h5>
+                    </a>
+                    <p class="mb-3 text-body text-center">Join to practice Hartha& Vinayas flow LIVE:</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="inline-flex items-center text-dark bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none transition">
+                            Read more
+                            <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flex justify-center items-center" data-aos="flip-left">
+                <div class="bg-neutral-primary-soft block w-full max-w-sm p-6 border border-default rounded-base shadow-xs hover:shadow-md transition">
+                    <div class="flex justify-center pb-6">
+                        <i class="fa-brands fa-google-play fa-2xl" style="color: rgb(65, 161, 132);"></i>
+                    </div>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-heading text-center" style="color: rgb(65, 161, 132);">Offline Classes</h5>
+                    </a>
+                    <p class="mb-3 text-body text-center">Join to practice Hartha& Vinayas flow</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="inline-flex items-center text-dark bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none transition">
+                            Read more
+                            <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flex justify-center items-center" data-aos="flip-left">
+                <div class="bg-neutral-primary-soft block w-full max-w-sm p-6 border border-default rounded-base shadow-xs hover:shadow-md transition">
+                    <div class="flex justify-center pb-6">
+                        <i class="fa-brands fa-google-play fa-2xl" style="color: rgb(65, 161, 132);"></i>
+                    </div>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-heading text-center" style="color: rgb(65, 161, 132);">Recorded Classes</h5>
+                    </a>
+                    <p class="mb-3 text-body text-center">Join to practice Hartha& Vinayas flow</p>
+                    <div class="flex justify-center">
+                        <a href="#" class="inline-flex items-center text-dark bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none transition">
+                            Read more
+                            <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section id="teachers" class="text-center px-4 sm:px-6 md:px-10 py-8 md:py-12">
+        <p class="text-2xl md:text-3xl mt-10 md:mt-20 font-bold mb-5 text-teal-500">Practice with experienced</p>
+        <p class="text-teal-500 max-w-4xl mx-auto text-sm sm:text-base">Meet our team of teachers, each of whom has in-depth training and years of experience in yoga and yoga-related fields – including anatomy, yoga therapy, meditation, Traditional Chinese Medicine, breathwork, fascia, trauma, polyvagal theory, and somatic movement.</p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 p-4 md:p-10 max-w-6xl mx-auto">
+            <div class="flex flex-col items-center justify-center">
+                <img src="https://serviceninjas.in/wp-content/uploads/2021/03/yoga-trainer-delhi.jpeg" class="w-36 h-36 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover" alt="Ashkar jnr">
+                <p class="text-teal-500 mt-2 font-medium">Ashkar jnr</p>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <img src="https://c.superprof.com/i/m/29512201/300/20240728101918/29512201.webp" class="w-36 h-36 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover" alt="Praveen">
+                <p class="text-teal-500 mt-2 font-medium">Praveen</p>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmpMjWarDY2z2MVd1XjC9598FqCI5pmLjXWb5ROgVyqNPFHx9dcPQPDyw&s=10" class="w-36 h-36 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover" alt="Don sebastin">
+                <p class="text-teal-500 mt-2 font-medium">Don sebastin</p>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <img src="https://www.yogaeasy.com/wp-content/uploads/2026/07/David.png" class="w-36 h-36 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover" alt="Jinto p">
+                <p class="text-teal-500 mt-2 font-medium">Jinto p</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Classes Section -->
+    <section id="programs">
+        <div data-aos="fade-right">
+            <div class="p-4 md:p-8">
+                <div id="animation-carousel" class="relative w-full" >
+                    <h1 class="text-center text-3xl md:text-4xl font-semibold text-teal-500 pb-3">New Classes</h1>
+                    <div class="relative h-auto overflow-hidden rounded-base">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-200 ease-linear flex-wrap justify-center p-2" data-carousel-item>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+                                <div class="bg-neutral-primary-soft border rounded-base shadow-xs"><img class="rounded-t-base w-full" src="https://alpha.uscreencdn.com/images/programs/4223405/horizontal/41f42ca2-d48f-4a0c-b1c4-65a7a4ad9e75.jpg?auto=webp&width=700" alt=""><div class="p-4 text-center"><span class="inline-flex items-center text-xs font-medium text-red-500"><svg class="w-3 h-3 me-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.122 17.645a7.185 7.185 0 0 1-2.656 2.495 7.06 7.06 0 0 1-3.52.853 6.617 6.617 0 0 1-3.306-.718 6.73 6.73 0 0 1-2.54-2.266c-2.672-4.57.287-8.846.887-9.668A4.448 4.448 0 0 0 8.07 6.31 4.49 4.49 0 0 0 7.997 4c1.284.965 6.43 3.258 5.525 10.631 1.496-1.136 2.7-3.046 2.846-6.216 1.43 1.061 3.985 5.462 1.754 9.23Z"/></svg>New Classes</span><h5 class="mt-2 text-xl font-semibold">Streamlining your design process today.</h5></div></div>
+                                <div class="bg-neutral-primary-soft border rounded-base shadow-xs"><img class="rounded-t-base w-full" src="https://alpha.uscreencdn.com/images/programs/4223550/horizontal/dbedc73e-13cd-406a-bcdd-fd089f439fda.jpg?auto=webp&width=700" alt=""><div class="p-4 text-center"><span class="inline-flex items-center text-xs font-medium text-red-500"><svg class="w-3 h-3 me-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.122 17.645a7.185 7.185 0 0 1-2.656 2.495 7.06 7.06 0 0 1-3.52.853 6.617 6.617 0 0 1-3.306-.718 6.73 6.73 0 0 1-2.54-2.266c-2.672-4.57.287-8.846.887-9.668A4.448 4.448 0 0 0 8.07 6.31 4.49 4.49 0 0 0 7.997 4c1.284.965 6.43 3.258 5.525 10.631 1.496-1.136 2.7-3.046 2.846-6.216 1.43 1.061 3.985 5.462 1.754 9.23Z"/></svg>New Classes</span><h5 class="mt-2 text-xl font-semibold">Flirting with tissues</h5></div></div>
+                                <div class="bg-neutral-primary-soft border rounded-base shadow-xs"><img class="rounded-t-base w-full" src="https://alpha.uscreencdn.com/images/programs/4223489/horizontal/5faebddc-e96b-4ab6-8213-90892b7b818c.jpg?auto=webp&width=700" alt=""><div class="p-4 text-center"><span class="inline-flex items-center text-xs font-medium text-red-500"><svg class="w-3 h-3 me-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.122 17.645a7.185 7.185 0 0 1-2.656 2.495 7.06 7.06 0 0 1-3.52.853 6.617 6.617 0 0 1-3.306-.718 6.73 6.73 0 0 1-2.54-2.266c-2.672-4.57.287-8.846.887-9.668A4.448 4.448 0 0 0 8.07 6.31 4.49 4.49 0 0 0 7.997 4c1.284.965 6.43 3.258 5.525 10.631 1.496-1.136 2.7-3.046 2.846-6.216 1.43 1.061 3.985 5.462 1.754 9.23Z"/></svg>New Classes</span><h5 class="mt-2 text-xl font-semibold">10 minutes to wake up body and mind!</h5></div></div>
+                                <div class="bg-neutral-primary-soft border rounded-base shadow-xs"><img class="rounded-t-base w-full" src="https://alpha.uscreencdn.com/images/programs/4227237/horizontal/7c9a9967-34ad-4bf8-9799-5583f366c2dc.jpg?auto=webp&width=700" alt=""><div class="p-4 text-center"><span class="inline-flex items-center text-xs font-medium text-red-500"><svg class="w-3 h-3 me-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.122 17.645a7.185 7.185 0 0 1-2.656 2.495 7.06 7.06 0 0 1-3.52.853 6.617 6.617 0 0 1-3.306-.718 6.73 6.73 0 0 1-2.54-2.266c-2.672-4.57.287-8.846.887-9.668A4.448 4.448 0 0 0 8.07 6.31 4.49 4.49 0 0 0 7.997 4c1.284.965 6.43 3.258 5.525 10.631 1.496-1.136 2.7-3.046 2.846-6.216 1.43 1.061 3.985 5.462 1.754 9.23Z"/></svg>New Classes</span><h5 class="mt-2 text-xl font-semibold">Be here. Be you. Belong - Floor flow</h5></div></div>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-200 ease-linear flex-wrap justify-center p-2" data-carousel-item>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+                                <div class="bg-neutral-primary-soft border rounded-base shadow-xs"><img class="rounded-t-base w-full" src="https://alpha.uscreencdn.com/images/programs/4050861/horizontal/9d2228f1-9711-46c2-bac1-750db0aa8390.png?auto=webp&width=700" alt=""><div class="p-4 text-center"><span class="inline-flex items-center text-xs font-medium text-red-500"><svg class="w-3 h-3 me-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.122 17.645a7.185 7.185 0 0 1-2.656 2.495 7.06 7.06 0 0 1-3.52.853 6.617 6.617 0 0 1-3.306-.718 6.73 6.73 0 0 1-2.54-2.266c-2.672-4.57.287-8.846.887-9.668A4.448 4.448 0 0 0 8.07 6.31 4.49 4.49 0 0 0 7.997 4c1.284.965 6.43 3.258 5.525 10.631 1.496-1.136 2.7-3.046 2.846-6.216 1.43 1.061 3.985 5.462 1.754 9.23Z"/></svg>New Classes</span><h5 class="mt-2 text-xl font-semibold">Mindful Morning Yoga</h5></div></div>
+                                <div class="bg-neutral-primary-soft border rounded-base shadow-xs"><img class="rounded-t-base w-full" src="https://alpha.uscreencdn.com/images/programs/4050834/horizontal/5a63f163-6a2f-4dab-9a99-f6914e0ed0a4.png?auto=webp&width=700" alt=""><div class="p-4 text-center"><span class="inline-flex items-center text-xs font-medium text-red-500"><svg class="w-3 h-3 me-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.122 17.645a7.185 7.185 0 0 1-2.656 2.495 7.06 7.06 0 0 1-3.52.853 6.617 6.617 0 0 1-3.306-.718 6.73 6.73 0 0 1-2.54-2.266c-2.672-4.57.287-8.846.887-9.668A4.448 4.448 0 0 0 8.07 6.31 4.49 4.49 0 0 0 7.997 4c1.284.965 6.43 3.258 5.525 10.631 1.496-1.136 2.7-3.046 2.846-6.216 1.43 1.061 3.985 5.462 1.754 9.23Z"/></svg>New Classes</span><h5 class="mt-2 text-xl font-semibold">Sweat and Serenity</h5></div></div>
+                                <div class="bg-neutral-primary-soft border rounded-base shadow-xs"><img class="rounded-t-base w-full" src="https://alpha.uscreencdn.com/images/programs/4050842/horizontal/c1f8d7cf-1337-496d-8715-4f529ad5f889.png?auto=webp&width=700" alt=""><div class="p-4 text-center"><span class="inline-flex items-center text-xs font-medium text-red-500"><svg class="w-3 h-3 me-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.122 17.645a7.185 7.185 0 0 1-2.656 2.495 7.06 7.06 0 0 1-3.52.853 6.617 6.617 0 0 1-3.306-.718 6.73 6.73 0 0 1-2.54-2.266c-2.672-4.57.287-8.846.887-9.668A4.448 4.448 0 0 0 8.07 6.31 4.49 4.49 0 0 0 7.997 4c1.284.965 6.43 3.258 5.525 10.631 1.496-1.136 2.7-3.046 2.846-6.216 1.43 1.061 3.985 5.462 1.754 9.23Z"/></svg>New Classes</span><h5 class="mt-2 text-xl font-semibold">Strong and sculpted: Pilates and Vinyasa</h5></div></div>
+                                <div class="bg-neutral-primary-soft border rounded-base shadow-xs"><img class="rounded-t-base w-full" src="https://alpha.uscreencdn.com/images/programs/4050844/horizontal/62cea66a-1562-4b26-ac7d-3d4a3582f0aa.png?auto=webp&width=700" alt=""><div class="p-4 text-center"><span class="inline-flex items-center text-xs font-medium text-red-500"><svg class="w-3 h-3 me-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.122 17.645a7.185 7.185 0 0 1-2.656 2.495 7.06 7.06 0 0 1-3.52.853 6.617 6.617 0 0 1-3.306-.718 6.73 6.73 0 0 1-2.54-2.266c-2.672-4.57.287-8.846.887-9.668A4.448 4.448 0 0 0 8.07 6.31 4.49 4.49 0 0 0 7.997 4c1.284.965 6.43 3.258 5.525 10.631 1.496-1.136 2.7-3.046 2.846-6.216 1.43 1.061 3.985 5.462 1.754 9.23Z"/></svg>Trending</span><h5 class="mt-2 text-xl font-semibold">Revolutionary Rest.</h5></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="absolute top-1/2 -translate-y-1/2 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50"><svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/></svg></span>
+                    </button>
+                    <button type="button" class="absolute top-1/2 -translate-y-1/2 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50"><svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YOGA Section -->
+    <section class="px-4 sm:px-6 max-w-7xl mx-auto">
+        <h1 class="text-3xl text-center font-semibold p-5 text-teal-500">YOGA</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" data-aos="fade-left">
+            <div class="bg-neutral-primary-soft rounded-base shadow-xs relative hover:shadow-md transition"><a href="#"><img class="rounded-xl w-full" src="https://alpha.uscreencdn.com/images/programs/4233534/horizontal/7b1d6875-7bd7-422a-9c4a-8e095ead7f35.jpg?auto=webp&width=700" alt=""><p class="absolute top-4 left-4 font-bold text-white drop-shadow-lg text-sm sm:text-base">Deep rest and Relaxation</p></a></div>
+            <div class="bg-neutral-primary-soft rounded-base shadow-xs relative hover:shadow-md transition"><a href="#"><img class="rounded-xl w-full" src="https://alpha.uscreencdn.com/images/programs/4001600/horizontal/ac6d27eb-31b1-4d6f-baa2-9f4f4cb6e79b.jpg?auto=webp&width=700" alt=""><p class="absolute top-4 left-4 font-bold text-white drop-shadow-lg text-sm sm:text-base">Flirting with tissues</p></a></div>
+            <div class="bg-neutral-primary-soft rounded-base shadow-xs relative hover:shadow-md transition"><a href="#"><img class="rounded-xl w-full" src="https://alpha.uscreencdn.com/images/programs/4000862/horizontal/04f6717a-de9c-4d29-a713-b5aa051f4671.jpg?auto=webp&width=700" alt=""><p class="absolute top-4 left-4 font-bold text-white drop-shadow-lg text-sm sm:text-base">Quick powerup</p></a></div>
+            <div class="bg-neutral-primary-soft rounded-base shadow-xs relative hover:shadow-md transition"><a href="#"><img class="rounded-xl w-full" src="https://alpha.uscreencdn.com/images/programs/3999902/horizontal/104b7fb1-966b-4e9a-a6dd-9673b9937029.jpg?auto=webp&width=700" alt=""><p class="absolute top-4 left-4 font-bold text-white drop-shadow-lg text-sm sm:text-base">wake up body and mind!</p></a></div>
+        </div>
+    </section>
+
+    <!-- Strength and fitness Section -->
+    <section class="px-4 sm:px-6 max-w-7xl mx-auto mt-12">
+        <h1 class="text-center text-3xl font-semibold text-teal-500 pt-8 pb-6">Strength and fitness</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-neutral-primary-soft border rounded-base shadow-xs"><img class="rounded-t-base w-full" src="https://alpha.uscreencdn.com/images/programs/4240972/horizontal/450c8499-f6af-40ac-aa43-b35c4aa26cab.jpg?auto=webp&width=700" alt=""><div class="p-4 text-center"><span class="inline-flex items-center text-xs font-medium text-red-500"><svg class="w-3 h-3 me-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.122 17.645a7.185 7.185 0 0 1-2.656 2.495 7.06 7.06 0 0 1-3.52.853 6.617 6.617 0 0 1-3.306-.718 6.73 6.73 0 0 1-2.54-2.266c-2.672-4.57.287-8.846.887-9.668A4.448 4.448 0 0 0 8.07 6.31 4.49 4.49 0 0 0 7.997 4c1.284.965 6.43 3.258 5.525 10.631 1.496-1.136 2.7-3.046 2.846-6.216 1.43 1.061 3.985 5.462 1.754 9.23Z"/></svg>Strength and fitness</span><h5 class="mt-2 text-xl font-semibold">Upper body strength foundations.</h5><a href="#" class="inline-flex items-center text-black bg-brand border rounded-base text-sm px-4 py-2">Click here <svg class="w-4 h-4 ms-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg></a></div></div>
+            <div class="bg-neutral-primary-soft border rounded-base shadow-xs"><img class="rounded-t-base w-full" src="https://alpha.uscreencdn.com/images/programs/4223550/horizontal/dbedc73e-13cd-406a-bcdd-fd089f439fda.jpg?auto=webp&width=700" alt=""><div class="p-4 text-center"><span class="inline-flex items-center text-xs font-medium text-red-500"><svg class="w-3 h-3 me-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.122 17.645a7.185 7.185 0 0 1-2.656 2.495 7.06 7.06 0 0 1-3.52.853 6.617 6.617 0 0 1-3.306-.718 6.73 6.73 0 0 1-2.54-2.266c-2.672-4.57.287-8.846.887-9.668A4.448 4.448 0 0 0 8.07 6.31 4.49 4.49 0 0 0 7.997 4c1.284.965 6.43 3.258 5.525 10.631 1.496-1.136 2.7-3.046 2.846-6.216 1.43 1.061 3.985 5.462 1.754 9.23Z"/></svg>Strength and fitness</span><h5 class="mt-2 text-xl font-semibold">Fascial alignment foundations.</h5><a href="#" class="inline-flex items-center text-black bg-brand border rounded-base text-sm px-4 py-2">Click here <svg class="w-4 h-4 ms-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg></a></div></div>
+            <div class="bg-neutral-primary-soft border rounded-base shadow-xs"><img class="rounded-t-base w-full" src="https://alpha.uscreencdn.com/images/programs/4209896/horizontal/82c49444-54a2-4930-9203-8af692df09ff.jpg?auto=webp&width=700" alt=""><div class="p-4 text-center"><span class="inline-flex items-center text-xs font-medium text-red-500"><svg class="w-3 h-3 me-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.122 17.645a7.185 7.185 0 0 1-2.656 2.495 7.06 7.06 0 0 1-3.52.853 6.617 6.617 0 0 1-3.306-.718 6.73 6.73 0 0 1-2.54-2.266c-2.672-4.57.287-8.846.887-9.668A4.448 4.448 0 0 0 8.07 6.31 4.49 4.49 0 0 0 7.997 4c1.284.965 6.43 3.258 5.525 10.631 1.496-1.136 2.7-3.046 2.846-6.216 1.43 1.061 3.985 5.462 1.754 9.23Z"/></svg>Strength and fitness</span><h5 class="mt-2 text-xl font-semibold">Lower body strength foundations.</h5><a href="#" class="inline-flex items-center text-black bg-brand border rounded-base text-sm px-4 py-2">Click here <svg class="w-4 h-4 ms-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg></a></div></div>
+            <div class="bg-neutral-primary-soft border rounded-base shadow-xs"><img class="rounded-t-base w-full" src="https://alpha.uscreencdn.com/images/programs/4224793/horizontal/e8423197-41ad-4e23-83f7-23e47152e97b.jpg?auto=webp&width=700" alt=""><div class="p-4 text-center"><span class="inline-flex items-center text-xs font-medium text-red-500"><svg class="w-3 h-3 me-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.122 17.645a7.185 7.185 0 0 1-2.656 2.495 7.06 7.06 0 0 1-3.52.853 6.617 6.617 0 0 1-3.306-.718 6.73 6.73 0 0 1-2.54-2.266c-2.672-4.57.287-8.846.887-9.668A4.448 4.448 0 0 0 8.07 6.31 4.49 4.49 0 0 0 7.997 4c1.284.965 6.43 3.258 5.525 10.631 1.496-1.136 2.7-3.046 2.846-6.216 1.43 1.061 3.985 5.462 1.754 9.23Z"/></svg>Strength and fitness</span><h5 class="mt-2 text-xl font-semibold">Pilates for deep core and pelvic floor.</h5><a href="#" class="inline-flex items-center text-black bg-brand border rounded-base text-sm px-4 py-2">Click here <svg class="w-4 h-4 ms-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg></a></div></div>
+        </div>
+    </section>
+
+    <!-- MEMBERSHIP INCLUDES -->
+    <section id="membership" class="bg-cyan-50 p-6 md:p-10 mt-10">
+        <h1 class="font-bold text-3xl md:text-5xl text-center text-red-400">MEMBERSHIP INCLUDES</h1>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-4xl mx-auto pt-8 md:pt-16">
+            <div class="text-center"><p class="text-4xl md:text-5xl text-red-400">3000+</p><p>Yoga Classes</p></div>
+            <div class="text-center"><p class="text-4xl md:text-5xl text-red-400">700+</p><p>Meditations Classes</p></div>
+            <div class="text-center"><p class="text-4xl md:text-5xl text-red-400">100+</p><p>Breathwork Practices</p></div>
+            <div class="text-center"><p class="text-4xl md:text-5xl text-red-400">2700+</p><p>In-Depth Articles</p></div>
+            <div class="text-center"><p class="text-4xl md:text-5xl text-red-400">300+</p><p>Courses & Challenges</p></div>
+            <div class="text-center"><p class="text-4xl md:text-5xl text-red-400">150+</p><p>Docuseries Podcasts</p></div>
+        </div>
+        <div class="flex justify-center mt-8">
+            <a href="#" class="inline-flex items-center text-cyan-50 bg-red-400 border rounded-base text-sm px-6 py-3 hover:bg-red-500 transition">Start 7 Day Free Trail <svg class="w-4 h-4 ms-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg></a>
+        </div>
+    </section>
+
+    <!-- Choose membership plan -->
+    <section class="px-4 max-w-6xl mx-auto">
+        <h1 class="font-bold text-3xl text-center pt-10 text-red-400">CHOOSE MEMBERSHIP PLAN</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-10 max-w-4xl mx-auto">
+            <!-- Annual -->
+            <div class="w-full max-w-sm mx-auto p-6 bg-neutral-primary-soft border rounded-base shadow-xs hover:shadow-md transition">
+                <span class="bg-red-400 text-white text-xs font-medium px-2 py-1 rounded inline-block">Best Deal! Save 30%</span>
+                <h5 class="my-3 text-xl font-medium">Annual plan</h5>
+                <div class="border-b pb-3"><span class="text-4xl font-extrabold">$49.08</span><span class="ms-1">/month</span><div class="text-sm"><span class="font-bold">$249.08</span>/year</div></div>
+                <ul class="space-y-2 my-4 text-sm">
+                    <li class="flex items-center"><svg class="w-4 h-4 me-1 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Unlimited access</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 me-1 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Certificates for continuing ed</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 me-1 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>4000+ practices</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 me-1 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>20% discount on trainings</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 me-1 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>12 months for price of 9</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 me-1 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Complete documentation</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 me-1 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>FREE digital journal</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 me-1 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>24×7 support</li>
+                </ul>
+                <a href="#" class="inline-flex items-center text-white bg-red-400 border rounded-base text-sm px-4 py-2 hover:bg-red-500 transition">Proceed to Free Trail <svg class="w-4 h-4 ms-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg></a>
+                <p class="text-red-400 text-sm mt-2">FIRST 7 DAYS FREE</p>
+            </div>
+
+            <!-- Monthly -->
+            <div class="w-full max-w-sm mx-auto p-6 bg-neutral-primary-soft border rounded-base shadow-xs hover:shadow-md transition">
+                <h5 class="my-3 text-xl font-medium">Monthly</h5>
+                <div class="border-b pb-3"><span class="text-4xl font-extrabold">$52.08</span><span class="ms-1">/month</span><div class="text-sm">BILLED MONTHLY</div></div>
+                <ul class="space-y-2 my-4 text-sm">
+                    <li class="flex items-center"><svg class="w-4 h-4 me-1 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Unlimited access</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 me-1 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Certificates for continuing ed</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 me-1 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>4000+ practices</li>
+                    <li class="flex items-center"><svg class="w-4 h-4 me-1 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>20% discount on trainings</li>
+                </ul>
+                <a href="#" class="inline-flex items-center text-white bg-red-400 border rounded-base text-sm px-4 py-2 hover:bg-red-500 transition">Proceed to Free Trail <svg class="w-4 h-4 ms-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg></a>
+                <p class="text-red-400 text-sm mt-2">FIRST 7 DAYS FREE</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="px-4 max-w-4xl mx-auto my-10">
+        <div class="w-full bg-neutral-primary border rounded-base shadow-xs">
+            <ul class="flex flex-wrap text-sm font-medium text-center text-body bg-neutral-secondary-soft border-b rounded-t-base" id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
+                <li><button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true" class="inline-block p-4 text-fg-brand rounded-ss-base hover:bg-neutral-tertiary">Frequently Asked Question</button></li>
+            </ul>
+            <div id="defaultTabContent"><div class="hidden p-4 rounded-b-base md:p-8" id="about" role="tabpanel"><h2 class="text-2xl font-semibold">What is yoga International?</h2><p class="mb-4 text-body">Empower Developers, IT Ops, and business teams to collaborate at high velocity. Respond to changes and deliver great customer and employee service experiences fast.</p><a href="#" class="inline-flex items-center font-medium text-fg-brand hover:underline">Learn more <svg class="w-5 h-5 ms-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg></a><h2 class="text-2xl font-semibold mt-6">What makes yoga International different from other online yoga apps?</h2><p class="mb-4 text-body">Empower Developers, IT Ops, and business teams to collaborate at high velocity. Respond to changes and deliver great customer and employee service experiences fast.</p><a href="#" class="inline-flex items-center font-medium text-fg-brand hover:underline">Learn more <svg class="w-5 h-5 ms-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg></a><h2 class="text-2xl font-semibold mt-6">What is Included in my yoga International membership?</h2><p class="mb-4 text-body">Empower Developers, IT Ops, and business teams to collaborate at high velocity. Respond to changes and deliver great customer and employee service experiences fast.</p><a href="#" class="inline-flex items-center font-medium text-fg-brand hover:underline">Learn more <svg class="w-5 h-5 ms-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg></a><h2 class="text-2xl font-semibold mt-6">How does the free trail work?</h2><p class="mb-4 text-body">Empower Developers, IT Ops, and business teams to collaborate at high velocity. Respond to changes and deliver great customer and employee service experiences fast.</p><a href="#" class="inline-flex items-center font-medium text-fg-brand hover:underline">Learn more <svg class="w-5 h-5 ms-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg></a></div></div>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <section class="px-4 max-w-6xl mx-auto my-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-cyan-50 p-6 rounded-base shadow-xs"><i class="fa-brands fa-twitch fa-2xl" style="color: rgb(147, 82, 82);"></i><h5 class="text-2xl font-semibold">A HEALTHY CHOICE</h5><p>"Subscribing to your platform has been the best choice for my mental, spiritual and physical health"</p><p class="text-center mt-2">Melissa</p></div>
+            <div class="bg-cyan-50 p-6 rounded-base shadow-xs"><i class="fa-brands fa-twitch fa-2xl" style="color: rgb(147, 82, 82);"></i><h5 class="text-2xl font-semibold">WHAT REALLY MATTERS</h5><p>"You make me feel okay that I wobble a bit and help me remember why I love yoga and physical health"</p><p class="text-center mt-2">Sam</p></div>
+            <div class="bg-cyan-50 p-6 rounded-base shadow-xs"><i class="fa-brands fa-twitch fa-2xl" style="color: rgb(147, 82, 82);"></i><h5 class="text-2xl font-semibold">CAN'T STOP RECOMMENDING</h5><p>"I've lost count of the number of times I've recommended this online studio to others and physical health"</p><p class="text-center mt-2">Carole</p></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="bg-cyan-100 p-6">
+            <div class="flex justify-center"><img src="https://alpha.uscreencdn.com/images/logotypes/114715/logo_rgb.1767717226.png" width="100" alt="logo"></div>
+            <div class="text-center text-2xl font-semibold py-4">Sign up to our weekly newsettler</div>
+            <div class="flex justify-center"><a href="#" class="inline-flex items-center text-white bg-black rounded-base text-sm px-6 py-3 hover:bg-gray-800 transition">Sign up <svg class="w-4 h-4 ms-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg></a></div>
+            <div class="flex flex-wrap justify-between items-center max-w-screen-xl mx-auto py-6">
+                <ul class="flex flex-wrap gap-4 text-sm"><li><a href="#" class="hover:underline">About</a></li><li><a href="#" class="hover:underline">Privacy Policy</a></li><li><a href="#" class="hover:underline">Licensing</a></li><li><a href="#" class="hover:underline">Contact</a></li></ul>
+                <div class="flex gap-3 mt-4 sm:mt-0">
+                    <a class="socialContainer containerOne" href="#"><svg viewBox="0 0 16 16" class="w-5 h-5 fill-white"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg></a>
+                    <a class="socialContainer containerTwo" href="#"><svg viewBox="0 0 16 16" class="w-5 h-5 fill-white"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg></a>
+                    <a class="socialContainer containerThree" href="#"><svg viewBox="0 0 448 512" class="w-5 h-5 fill-white"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+                    <a class="socialContainer containerFour" href="#"><svg viewBox="0 0 16 16" class="w-5 h-5 fill-white"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg></a>
+                </div>
+            </div>
+            <hr class="my-6 border-default sm:mx-auto lg:my-8" />
+            <span class="block text-sm text-body sm:text-center">© 2026 <a href="https://flowbite.com/" class="hover:underline">Yogalife™</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+        // Fix carousel items - show first by default
+        document.addEventListener('DOMContentLoaded', function() {
+            const items = document.querySelectorAll('#animation-carousel [data-carousel-item]');
+            if (items.length > 0) {
+                items[0].classList.remove('hidden');
+                items[0].classList.add('active');
+            }
+            // Carousel buttons
+            const prevBtn = document.querySelector('[data-carousel-prev]');
+            const nextBtn = document.querySelector('[data-carousel-next]');
+            let currentIndex = 0;
+
+            function showItem(index) {
+                items.forEach((el, i) => {
+                    el.classList.add('hidden');
+                    el.classList.remove('active');
+                    if (i === index) {
+                        el.classList.remove('hidden');
+                        el.classList.add('active');
+                    }
+                });
+            }
+            if (prevBtn && nextBtn) {
+                prevBtn.addEventListener('click', function() {
+                    currentIndex = (currentIndex - 1 + items.length) % items.length;
+                    showItem(currentIndex);
+                });
+                nextBtn.addEventListener('click', function() {
+                    currentIndex = (currentIndex + 1) % items.length;
+                    showItem(currentIndex);
+                });
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+</body>
+</html>
